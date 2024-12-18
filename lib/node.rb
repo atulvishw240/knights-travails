@@ -9,4 +9,8 @@ class Node
     @x_coordinate = x
     @y_coordinate = y
   end
+
+  def to_s
+    "X coordinate: #{x}, Y coordinate: #{y}"
+  end
 end
