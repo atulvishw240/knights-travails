@@ -21,7 +21,7 @@ class Board
       row.each_with_index do |col, col_index|
         node = board[row_index][col_index]
 
-        puts "#{node.x_coordinate}, #{node.y_coordinate}"
+        yield(node)
       end
     end
   end
